@@ -36,7 +36,7 @@
                         <label class="form-label fw-bold" for="email">Email address</label>
                         <input type="email" name="email" id="email"
                             class="form-control form-control-lg fs-6 @error('email') is-invalid @enderror"
-                            placeholder="Masukkan Email..." required value="{{ old('email') }}" />
+                            placeholder="Masukkan Email..." required value="admin@gmail.com" />
                         @error('email')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -49,7 +49,7 @@
                         <label class="form-label fw-bold" for="password">Password</label>
                         <div class="input-group">
                             <input type="password" name="password" id="password" class="form-control form-control-lg fs-6"
-                                placeholder="Masukkan Password..." required />
+                                placeholder="Masukkan Password..." required value="12345" />
                             <span class="input-group-text">
                                 <i class="fa-solid fa-eye" id="toggle-password" style="cursor: pointer"
                                     toggle="#password"></i>
